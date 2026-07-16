@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/reset.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>sos</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__logo" href="#"
+          ><img src="./src/images/logo.svg" alt="SOS"
+        /></a>
+        <div class="header__mobile-menu">
+          <button type="button" class="header__mobile-close">
+            <img src="./src/images/header-close.svg" alt="" />
+          </button>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">main</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#about">about</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#features">game features</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#requirements"
+                  >system requirements</a
+                >
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#opinion">quotes</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__controls">
+          <button class="header__lang-btn">
+            ENG
+            <img
+              class="header__lang-drop"
+              src="./src/images/dropdown.svg"
+              alt=""
+            />
+          </button>
+          <button class="header__mobile-menu-btn">
+            <img
+              class="header__mobile-icon"
+              src="./src/images/menu icon.svg"
+              alt=""
+            />
+          </button>
+          <ul class="header__platforms">
+            <li>
+              <a class="header__steam" href="#"
+                ><img src="./src/images/xbox icon.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a class="header__x-box" href="#"
+                ><img src="./src/images/steam icon.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__background background">
+          <img
+            class="hero__background-img background-img"
+            src="./src/images/bg image 1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__top">
+              <h1 class="hero__title">SURVIVE AT ALL COSTS</h1>
+              <h3 class="hero__subtitle">
+                Experience new social battle royale game
+              </h3>
+              <a
+                class="hero__link button"
+                href="https://store.steampowered.com/app/619080/SOS/"
+                target="_blank"
+                >Buy now on Steam | $14.99</a
+              >
+            </div>
+            <div class="hero__bottom">
+              <a class="hero__scroll" href="#about"
+                ><p class="hero__scroll">The story</p>
+                <img
+                  class="hero__scroll-pic"
+                  src="./src/images/scroll down.svg"
+                  alt=""
+              /></a>
+              <div class="hero__switch">O O O O -></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="about__content">
+            <div class="about__wrapper">
+              <h3 class="about__title">What is SOS?</h3>
+              <h2 class="about__subtitle">social battle royale game</h2>
+              <div class="about__body">
+                <p class="about__text">
+                  Each round, <strong>you</strong> and <strong>15</strong> other
+                  contestants compete to escape a deadly island filled with
+                  monsters. The trick is: <strong>three</strong> people can
+                  survive. Will you run solo or form friendships with others to
+                  escape?
+                </p>
+                <p class="about__text">
+                  Making the right decisions could be the difference between
+                  <span class="about__highlight">life and death. </span>
+                </p>
+              </div>
+            </div>
+            <ul class="about__gallery">
+              <li class="about__gallery-item">
+                <img
+                  class="about__image"
+                  src="./src/images/about-gallery-image-1.jpg"
+                  alt="totem"
+                />
+              </li>
+              <li class="about__gallery-item">
+                <img
+                  class="about__image"
+                  src="./src/images/about-gallery-image-2.jpg"
+                  alt="village"
+                />
+              </li>
+              <li class="about__gallery-item">
+                <img
+                  class="about__image"
+                  src="./src/images/about-gallery-image-3.jpg"
+                  alt="palms"
+                />
+              </li>
+              <li class="about__gallery-item">
+                <img
+                  class="about__image"
+                  src="./src/images/about-gallery-image-4.jpg"
+                  alt="beach"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="features section" id="features">
+        <div class="container">
+          <div class="features__content">
+            <h3 class="features__title">What’s so special?</h3>
+            <h2 class="features__subtitle">features</h2>
+            <ul class="features__list">
+              <li class="features__item active">
+                <h3 class="features__item-title">SURVIVE AT ALL COSTS</h3>
+                <p class="features__item-text">
+                  You have 30 minutes to find a relic, signal for extraction,
+                  and grab one of three spots on the rescue chopper.
+                </p>
+              </li>
+              <li class="features__item">
+                <h3 class="features__item-title">CREATE ALLIES AND ENEMIES</h3>
+                <p class="features__item-text">
+                  Work together with other survivors to increase your chances of
+                  success, but be prepared to face rival teams fighting for the
+                  same objective.
+                </p>
+              </li>
+              <li class="features__item">
+                <h3 class="features__item-title">IMPRESS THE AUDIENCE</h3>
+                <p class="features__item-text">
+                  Every match tells a unique story. Pull off incredible plays,
+                  outsmart your opponents, and become the legend everyone
+                  remembers.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="requirements section" id="requirements">
+        <div class="container">
+          <h3 class="requirements__title">Can My Computer Run this game?</h3>
+          <h2 class="requirements__subtitle">system requirements</h2>
+          <div class="requirements__frame">
+            <img
+              class="requirements__border"
+              src="./src/images/requirements-frame.svg"
+            />
+            <ul class="requirements__list">
+              <li class="requirements__item">
+                <h4 class="requirements__subtitle-params">OS:</h4>
+                <p class="requirements__text">
+                  Windows 7 64-bit only (No OSX support at this time)
+                </p>
+              </li>
+              <li class="requirements__item">
+                <h4 class="requirements__subtitle-params">PROCESSOR:</h4>
+                <p class="requirements__text">
+                  Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
+                </p>
+              </li>
+              <li class="requirements__item">
+                <h4 class="requirements__subtitle-params">MEMORY:</h4>
+                <p class="requirements__text">8 GB RAM</p>
+              </li>
+              <li class="requirements__item">
+                <h4 class="requirements__subtitle-params">STORAGE:</h4>
+                <p class="requirements__text">8 GB available space</p>
+              </li>
+              <li class="requirements__item">
+                <h4 class="requirements__subtitle-params">GRAPHICS:</h4>
+                <p class="requirements__text">
+                  NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11
+                  (Shader Model 5)
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="opinion section" id="opinion">
+        <div class="container">
+          <div class="opinion__content">
+            <div class="opinion__wrapper">
+              <h3 class="opinion__title">What people think?</h3>
+              <h2 class="opinion__subtitle">Press quotes</h2>
+              <p class="opinion__text">
+                Our goal is to create a product and service that you’re
+                satisfied with and use it every day. This is why we’re
+                constantly working on our services to make it better every day
+                and really listen to what our users has to say.
+              </p>
+              <a href="#" class="opinion__link button"
+                >read more testimonials</a
+              >
+            </div>
+            <ul class="opinion__list">
+              <li class="opinion__item">
+                <div class="opinion__author-card">
+                  <div class="opinion__avatar">
+                    <img src="./src/images/avatar-1.jpg" alt="Evan Lahti" />
+                  </div>
+                  <div class="opinion__author-info">
+                    <h4 class="opinion__author-name">Evan Lahti</h4>
+                    <p class="opinion__job">PC Gamer</p>
+                  </div>
+                  <a class="opinion__twitter" href="#" alt=""
+                    ><img src="./src/images/twitter.svg"
+                  /></a>
+                </div>
+                <p class="opinion__text-card">
+                  “One of my gaming highlights of the year.”
+                </p>
+                <p class="opinion__date">October 18, 2018</p>
+              </li>
+              <li class="opinion__item">
+                <div class="opinion__author-card">
+                  <div class="opinion__avatar">
+                    <img src="./src/images/avatar-2.jpg" alt="Jada Griffin" />
+                  </div>
+
+                  <div class="opinion__author-info">
+                    <h4 class="opinion__author-name">Jada Griffin</h4>
+                    <p class="opinion__job">Nerdreactor</p>
+                  </div>
+                  <a class="opinion__twitter" href="#" alt=""
+                    ><img src="./src/images/twitter.svg"
+                  /></a>
+                </div>
+                <p class="opinion__text-card">
+                  “The next big thing in the world of streaming and survival
+                  games.”
+                </p>
+                <p class="opinion__date">December 21, 2018</p>
+              </li>
+              <li class="opinion__item">
+                <div class="opinion__author-card">
+                  <div class="opinion__avatar">
+                    <img src="./src/images/avatar-3.jpg" alt="Aaron Williams" />
+                  </div>
+
+                  <div class="opinion__author-info">
+                    <h4 class="opinion__author-name">Aaron Williams</h4>
+                    <p class="opinion__job">Uproxx</p>
+                  </div>
+                  <a class="opinion__twitter" href="#" alt=""
+                    ><img src="./src/images/twitter.svg"
+                  /></a>
+                </div>
+                <p class="opinion__text-card">
+                  “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is
+                  Ridiculous.”
+                </p>
+                <p class="opinion__date">December 24, 2018</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe section">
+        <div class="container">
+          <div class="subscribe__content">
+            <div class="subscribe__head">
+              <h3 class="subscribe__title">Want to stay in touch?</h3>
+              <h2 class="subscribe__subtitle">newsletter SUBSCRIBE</h2>
+              <p class="subscribe__text">
+                In order to start receiving our news, all you have to do is
+                enter your email address. Everything else will be taken care of
+                by us. We will send you emails containing information about
+                game. We don’t spam.
+              </p>
+            </div>
+            <form class="subscribe__form">
+              <label class="subscribe__label" for="email">
+                <span class="subscribe__label-text">Your email address</span>
+                <input
+                  placeholder="your@gmail.com"
+                  class="subscribe__input"
+                  id="email"
+                  type="email"
+                />
+              </label>
+              <button class="subscribe__form-btn button" type="submit">
+                Subscribe now
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__logo" href="#"
+            ><img src="./src/images/logo.svg" alt="SOS"
+          /></a>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">main</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#about">about</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#features">game features</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#requirements"
+                  >system requirements</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#opinion">quotes</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="footer__list-social">
+            <li class="footer__item-social">
+              <a class="footer__link-social" aria-label="Facebook" href="#"
+                ><img src="./src/images/facebook.svg" alt=""
+              /></a>
+            </li>
+            <li class="footer__item-social">
+              <a class="footer__link-social" aria-label="twitter" href="#"
+                ><img src="./src/images/twitter-footer.svg" alt=""
+              /></a>
+            </li>
+            <li class="footer__item-social">
+              <a class="footer__link-social" aria-label="youtube" href="#"
+                ><img src="./src/images/youtube.svg" alt=""
+              /></a>
+            </li>
+            <li class="footer__item-social">
+              <a class="footer__link-social" aria-label="twitch" href="#"
+                ><img src="./src/images/twitch.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__rights">
+            © 2018 Outpost Games, Inc. All Rights Reserved
+          </p>
+          <ul class="footer__legal-list">
+            <li class="footer__legal-item">
+              <a class="footer__legal-link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__legal-item">
+              <a class="footer__legal-link" href="#">Terms of Services</a>
+            </li>
+            <li class="footer__legal-item">
+              <a class="footer__legal-link" href="#">Code of Conduct</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
