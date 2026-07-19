@@ -87,19 +87,44 @@ p {
 .header__controls {
   display: flex;
 }
-
+.header__lang {
+  position: relative;
+}
 .header__lang-btn {
-  font-weight: 700;
-  letter-spacing: 0.1em;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   color: #fff;
   gap: 6px;
   padding: 5px 15px;
   border-right: 1px solid;
   margin-right: 20px;
+  min-width: 85px;
 }
-
+.header__lang-btn-text {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.header__lang-list {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  top: 35px;
+  left: 20px;
+  background-color: #000;
+  border-radius: 5px;
+}
+.header__lang-list.is-open {
+  display: block;
+}
+.header__lang-option {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+.header__lang-option:hover {
+  color: #ffb548;
+}
 .header__mobile-menu {
   display: none;
   position: absolute;
@@ -717,6 +742,9 @@ p {
 
   .header__lang-btn {
     margin-right: 25px;
+  }
+  .header__lang-list {
+    border-radius: 3px;
   }
 
   .header__platforms {
