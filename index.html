@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,14 +11,14 @@
     />
 
     <title>sos</title>
-    <script type="module" crossorigin src="/sos/assets/index-C-kbJD7T.js"></script>
-    <link rel="stylesheet" crossorigin href="/sos/assets/index-BTpbTzck.css">
+    <script type="module" crossorigin src="/sos/assets/index-D6fuJSk0.js"></script>
+    <link rel="stylesheet" crossorigin href="/sos/assets/index-BP3A7m9E.css">
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
         <a class="header__logo" href="#"
-          ><img src="/sos/assets/logo-NE8A7csD.svg" alt="SOS"
+          ><img src="/sos/assets/logo-g8-nkh2Z.svg" alt="SOS"
         /></a>
         <div class="header__mobile-menu">
           <button type="button" class="header__mobile-close">
@@ -27,34 +27,60 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__link" href="#">main</a>
+                <a data-lang="nav-main" class="header__link" href="#">main</a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#about">about</a>
+                <a data-lang="nav-about" class="header__link" href="#about"
+                  >about</a
+                >
               </li>
               <li class="header__item">
-                <a class="header__link" href="#features">game features</a>
+                <a
+                  data-lang="nav-features"
+                  class="header__link"
+                  href="#features"
+                  >game features</a
+                >
               </li>
               <li class="header__item">
-                <a class="header__link" href="#requirements"
+                <a
+                  data-lang="nav-requirements"
+                  class="header__link"
+                  href="#requirements"
                   >system requirements</a
                 >
               </li>
               <li class="header__item">
-                <a class="header__link" href="#opinion">quotes</a>
+                <a data-lang="nav-quotes" class="header__link" href="#opinion"
+                  >quotes</a
+                >
               </li>
             </ul>
           </nav>
         </div>
         <div class="header__controls">
-          <button class="header__lang-btn">
-            ENG
-            <img
-              class="header__lang-drop"
-              src="data:image/svg+xml,%3csvg%20width='9'%20height='5'%20viewBox='0%200%209%205'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.699951%200.700012L4.3478%203.90039L7.995%200.700012'%20stroke='white'%20stroke-width='1.4'%20stroke-linecap='round'/%3e%3c/svg%3e"
-              alt=""
-            />
-          </button>
+          <div class="header__lang">
+            <button class="header__lang-btn">
+              <span class="header__lang-btn-text"> ENG</span>
+              <img
+                class="header__lang-drop"
+                src="data:image/svg+xml,%3csvg%20width='9'%20height='5'%20viewBox='0%200%209%205'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.699951%200.700012L4.3478%203.90039L7.995%200.700012'%20stroke='white'%20stroke-width='1.4'%20stroke-linecap='round'/%3e%3c/svg%3e"
+                alt=""
+              />
+            </button>
+            <ul class="header__lang-list">
+              <li class="header__lang-item">
+                <button data-language="en" class="header__lang-option">
+                  ENG
+                </button>
+              </li>
+              <li class="header__lang-item">
+                <button data-language="cz" class="header__lang-option">
+                  CZ
+                </button>
+              </li>
+            </ul>
+          </div>
           <button class="header__mobile-menu-btn">
             <img
               class="header__mobile-icon"
@@ -89,11 +115,14 @@
         <div class="container">
           <div class="hero__content">
             <div class="hero__top">
-              <h1 class="hero__title">SURVIVE AT ALL COSTS</h1>
-              <h3 class="hero__subtitle">
+              <h1 data-lang="hero-title" class="hero__title">
+                SURVIVE AT ALL COSTS
+              </h1>
+              <h3 data-lang="hero-subtitle" class="hero__subtitle">
                 Experience new social battle royale game
               </h3>
               <a
+                data-lang="hero-buy-btn"
                 class="hero__link button"
                 href="https://store.steampowered.com/app/619080/SOS/"
                 target="_blank"
@@ -102,7 +131,7 @@
             </div>
             <div class="hero__bottom">
               <a class="hero__scroll" href="#about"
-                ><p class="hero__scroll">The story</p>
+                ><p data-lang="hero-scroll" class="hero__scroll">The story</p>
                 <img
                   class="hero__scroll-pic"
                   src="data:image/svg+xml,%3csvg%20width='23'%20height='11'%20viewBox='0%200%2023%2011'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M21.2544%201H1L11.0138%209.16912L21.2544%201Z'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
@@ -117,17 +146,19 @@
         <div class="container">
           <div class="about__content">
             <div class="about__wrapper">
-              <h3 class="about__title">What is SOS?</h3>
-              <h2 class="about__subtitle">social battle royale game</h2>
+              <h3 data-lang="about-title" class="about__title">What is SOS?</h3>
+              <h2 data-lang="about-subtitle" class="about__subtitle">
+                social battle royale game
+              </h2>
               <div class="about__body">
-                <p class="about__text">
+                <p data-lang="about-text" class="about__text">
                   Each round, <strong>you</strong> and <strong>15</strong> other
                   contestants compete to escape a deadly island filled with
                   monsters. The trick is: <strong>three</strong> people can
                   survive. Will you run solo or form friendships with others to
                   escape?
                 </p>
-                <p class="about__text">
+                <p data-lang="about-text-second" class="about__text">
                   Making the right decisions could be the difference between
                   <span class="about__highlight">life and death. </span>
                 </p>
@@ -169,27 +200,55 @@
       <section class="features section" id="features">
         <div class="container">
           <div class="features__content">
-            <h3 class="features__title">What’s so special?</h3>
-            <h2 class="features__subtitle">features</h2>
+            <h3 data-lang="features-title" class="features__title">
+              What’s so special?
+            </h3>
+            <h2 data-lang="features-subtitle" class="features__subtitle">
+              features
+            </h2>
             <ul class="features__list">
               <li class="features__item active">
-                <h3 class="features__item-title">SURVIVE AT ALL COSTS</h3>
-                <p class="features__item-text">
+                <h3
+                  data-lang="features-item-title-survive"
+                  class="features__item-title"
+                >
+                  SURVIVE AT ALL COSTS
+                </h3>
+                <p
+                  data-lang="features-item-text-survive"
+                  class="features__item-text"
+                >
                   You have 30 minutes to find a relic, signal for extraction,
                   and grab one of three spots on the rescue chopper.
                 </p>
               </li>
               <li class="features__item">
-                <h3 class="features__item-title">CREATE ALLIES AND ENEMIES</h3>
-                <p class="features__item-text">
+                <h3
+                  data-lang="features-item-title-create"
+                  class="features__item-title"
+                >
+                  CREATE ALLIES AND ENEMIES
+                </h3>
+                <p
+                  data-lang="features-item-text-create"
+                  class="features__item-text"
+                >
                   Work together with other survivors to increase your chances of
                   success, but be prepared to face rival teams fighting for the
                   same objective.
                 </p>
               </li>
               <li class="features__item">
-                <h3 class="features__item-title">IMPRESS THE AUDIENCE</h3>
-                <p class="features__item-text">
+                <h3
+                  data-lang="features-item-title-impress"
+                  class="features__item-title"
+                >
+                  IMPRESS THE AUDIENCE
+                </h3>
+                <p
+                  data-lang="features-item-text-impress"
+                  class="features__item-text"
+                >
                   Every match tells a unique story. Pull off incredible plays,
                   outsmart your opponents, and become the legend everyone
                   remembers.
@@ -201,8 +260,12 @@
       </section>
       <section class="requirements section" id="requirements">
         <div class="container">
-          <h3 class="requirements__title">Can My Computer Run this game?</h3>
-          <h2 class="requirements__subtitle">system requirements</h2>
+          <h3 data-lang="requirements-title" class="requirements__title">
+            Can My Computer Run this game?
+          </h3>
+          <h2 data-lang="requirements-subtitle" class="requirements__subtitle">
+            system requirements
+          </h2>
           <div class="requirements__frame">
             <img
               class="requirements__border"
@@ -210,28 +273,72 @@
             />
             <ul class="requirements__list">
               <li class="requirements__item">
-                <h4 class="requirements__subtitle-params">OS:</h4>
-                <p class="requirements__text">
+                <h4
+                  data-lang="requirements-os"
+                  class="requirements__subtitle-params"
+                >
+                  OS:
+                </h4>
+                <p
+                  data-lang="requirements-os-params"
+                  class="requirements__text"
+                >
                   Windows 7 64-bit only (No OSX support at this time)
                 </p>
               </li>
               <li class="requirements__item">
-                <h4 class="requirements__subtitle-params">PROCESSOR:</h4>
-                <p class="requirements__text">
+                <h4
+                  data-lang="requirements-processor"
+                  class="requirements__subtitle-params"
+                >
+                  PROCESSOR:
+                </h4>
+                <p
+                  data-lang="requirements-processor-params"
+                  class="requirements__text"
+                >
                   Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
                 </p>
               </li>
               <li class="requirements__item">
-                <h4 class="requirements__subtitle-params">MEMORY:</h4>
-                <p class="requirements__text">8 GB RAM</p>
+                <h4
+                  data-lang="requirements-memory"
+                  class="requirements__subtitle-params"
+                >
+                  MEMORY:
+                </h4>
+                <p
+                  data-lang="requirements-memory-params"
+                  class="requirements__text"
+                >
+                  8 GB RAM
+                </p>
               </li>
               <li class="requirements__item">
-                <h4 class="requirements__subtitle-params">STORAGE:</h4>
-                <p class="requirements__text">8 GB available space</p>
+                <h4
+                  data-lang="requirements-storage"
+                  class="requirements__subtitle-params"
+                >
+                  STORAGE:
+                </h4>
+                <p
+                  data-lang="requirements-storage-params"
+                  class="requirements__text"
+                >
+                  8 GB available space
+                </p>
               </li>
               <li class="requirements__item">
-                <h4 class="requirements__subtitle-params">GRAPHICS:</h4>
-                <p class="requirements__text">
+                <h4
+                  data-lang="requirements-graphic"
+                  class="requirements__subtitle-params"
+                >
+                  GRAPHICS:
+                </h4>
+                <p
+                  data-lang="requirements-graphic-params"
+                  class="requirements__text"
+                >
                   NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11
                   (Shader Model 5)
                 </p>
@@ -244,15 +351,22 @@
         <div class="container">
           <div class="opinion__content">
             <div class="opinion__wrapper">
-              <h3 class="opinion__title">What people think?</h3>
-              <h2 class="opinion__subtitle">Press quotes</h2>
-              <p class="opinion__text">
+              <h3 data-lang="opinion-title" class="opinion__title">
+                What people think?
+              </h3>
+              <h2 data-lang="opinion-subtitle" class="opinion__subtitle">
+                Press quotes
+              </h2>
+              <p data-lang="opinion-title-text" class="opinion__text">
                 Our goal is to create a product and service that you’re
                 satisfied with and use it every day. This is why we’re
                 constantly working on our services to make it better every day
                 and really listen to what our users has to say.
               </p>
-              <a href="#" class="opinion__link button"
+              <a
+                data-lang="opinion-link-info"
+                href="#"
+                class="opinion__link button"
                 >read more testimonials</a
               >
             </div>
@@ -263,17 +377,26 @@
                     <img src="/sos/assets/avatar-1-BYe657LY.jpg" alt="Evan Lahti" />
                   </div>
                   <div class="opinion__author-info">
-                    <h4 class="opinion__author-name">Evan Lahti</h4>
-                    <p class="opinion__job">PC Gamer</p>
+                    <h4
+                      data-lang="opinion-author-evan"
+                      class="opinion__author-name"
+                    >
+                      Evan Lahti
+                    </h4>
+                    <p data-lang="opinion-job-evan" class="opinion__job">
+                      PC Gamer
+                    </p>
                   </div>
                   <a class="opinion__twitter" href="#" alt=""
                     ><img src="data:image/svg+xml,%3csvg%20width='19'%20height='14'%20viewBox='0%200%2019%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20opacity='0.3'%20d='M18.025%201.65741C17.35%201.94305%2016.6341%202.13057%2015.9011%202.21376C16.6635%201.77589%2017.25%201.08391%2017.5259%200.258178C16.8001%200.669862%2016.0059%200.959909%2015.1777%201.11578C14.4788%200.40239%2013.5014%20-0.00169113%2012.4788%205.32016e-06C10.4374%205.32016e-06%208.78057%201.58201%208.78057%203.53353C8.78057%203.81082%208.81323%204.08108%208.87716%204.33915C5.80334%204.19154%203.07911%202.78528%201.25483%200.64692C0.93629%201.16821%200.754598%201.77589%200.754598%202.42368C0.754598%203.64915%201.4072%204.73097%202.39926%205.3648C1.81189%205.3476%201.23741%205.19601%200.724009%204.92275V4.96782C0.724009%206.67951%201.99885%208.10787%203.68973%208.43319C3.14516%208.57412%202.57417%208.59479%202.02%208.49364C2.49079%209.89782%203.85694%2010.9193%205.47446%2010.949C4.20905%2011.8953%202.61476%2012.4613%200.881783%2012.4613C0.587106%2012.461%200.292693%2012.4445%200%2012.4118C1.63638%2013.4142%203.5806%2014%205.6688%2014C12.4708%2014%2016.1897%208.6141%2016.1897%203.94348C16.1897%203.79071%2016.1897%203.63794%2016.1782%203.48627C16.9018%202.98587%2017.5268%202.36664%2018.0239%201.65741H18.025Z'%20fill='white'/%3e%3c/svg%3e"
                   /></a>
                 </div>
-                <p class="opinion__text-card">
+                <p data-lang="opinion-view-evan" class="opinion__text-card">
                   “One of my gaming highlights of the year.”
                 </p>
-                <p class="opinion__date">October 18, 2018</p>
+                <p data-lang="opinion-date-evan" class="opinion__date">
+                  October 18, 2018
+                </p>
               </li>
               <li class="opinion__item">
                 <div class="opinion__author-card">
@@ -282,18 +405,27 @@
                   </div>
 
                   <div class="opinion__author-info">
-                    <h4 class="opinion__author-name">Jada Griffin</h4>
-                    <p class="opinion__job">Nerdreactor</p>
+                    <h4
+                      data-lang="opinion-author-jada"
+                      class="opinion__author-name"
+                    >
+                      Jada Griffin
+                    </h4>
+                    <p data-lang="opinion-job-jada" class="opinion__job">
+                      Nerdreactor
+                    </p>
                   </div>
                   <a class="opinion__twitter" href="#" alt=""
                     ><img src="data:image/svg+xml,%3csvg%20width='19'%20height='14'%20viewBox='0%200%2019%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20opacity='0.3'%20d='M18.025%201.65741C17.35%201.94305%2016.6341%202.13057%2015.9011%202.21376C16.6635%201.77589%2017.25%201.08391%2017.5259%200.258178C16.8001%200.669862%2016.0059%200.959909%2015.1777%201.11578C14.4788%200.40239%2013.5014%20-0.00169113%2012.4788%205.32016e-06C10.4374%205.32016e-06%208.78057%201.58201%208.78057%203.53353C8.78057%203.81082%208.81323%204.08108%208.87716%204.33915C5.80334%204.19154%203.07911%202.78528%201.25483%200.64692C0.93629%201.16821%200.754598%201.77589%200.754598%202.42368C0.754598%203.64915%201.4072%204.73097%202.39926%205.3648C1.81189%205.3476%201.23741%205.19601%200.724009%204.92275V4.96782C0.724009%206.67951%201.99885%208.10787%203.68973%208.43319C3.14516%208.57412%202.57417%208.59479%202.02%208.49364C2.49079%209.89782%203.85694%2010.9193%205.47446%2010.949C4.20905%2011.8953%202.61476%2012.4613%200.881783%2012.4613C0.587106%2012.461%200.292693%2012.4445%200%2012.4118C1.63638%2013.4142%203.5806%2014%205.6688%2014C12.4708%2014%2016.1897%208.6141%2016.1897%203.94348C16.1897%203.79071%2016.1897%203.63794%2016.1782%203.48627C16.9018%202.98587%2017.5268%202.36664%2018.0239%201.65741H18.025Z'%20fill='white'/%3e%3c/svg%3e"
                   /></a>
                 </div>
-                <p class="opinion__text-card">
+                <p data-lang="opinion-view-jada" class="opinion__text-card">
                   “The next big thing in the world of streaming and survival
                   games.”
                 </p>
-                <p class="opinion__date">December 21, 2018</p>
+                <p data-lang="opinion-date-jada" class="opinion__date">
+                  December 21, 2018
+                </p>
               </li>
               <li class="opinion__item">
                 <div class="opinion__author-card">
@@ -302,18 +434,27 @@
                   </div>
 
                   <div class="opinion__author-info">
-                    <h4 class="opinion__author-name">Aaron Williams</h4>
-                    <p class="opinion__job">Uproxx</p>
+                    <h4
+                      data-lang="opinion-author-aaron"
+                      class="opinion__author-name"
+                    >
+                      Aaron Williams
+                    </h4>
+                    <p data-lang="opinion-job-aaron" class="opinion__job">
+                      Uproxx
+                    </p>
                   </div>
                   <a class="opinion__twitter" href="#" alt=""
                     ><img src="data:image/svg+xml,%3csvg%20width='19'%20height='14'%20viewBox='0%200%2019%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20opacity='0.3'%20d='M18.025%201.65741C17.35%201.94305%2016.6341%202.13057%2015.9011%202.21376C16.6635%201.77589%2017.25%201.08391%2017.5259%200.258178C16.8001%200.669862%2016.0059%200.959909%2015.1777%201.11578C14.4788%200.40239%2013.5014%20-0.00169113%2012.4788%205.32016e-06C10.4374%205.32016e-06%208.78057%201.58201%208.78057%203.53353C8.78057%203.81082%208.81323%204.08108%208.87716%204.33915C5.80334%204.19154%203.07911%202.78528%201.25483%200.64692C0.93629%201.16821%200.754598%201.77589%200.754598%202.42368C0.754598%203.64915%201.4072%204.73097%202.39926%205.3648C1.81189%205.3476%201.23741%205.19601%200.724009%204.92275V4.96782C0.724009%206.67951%201.99885%208.10787%203.68973%208.43319C3.14516%208.57412%202.57417%208.59479%202.02%208.49364C2.49079%209.89782%203.85694%2010.9193%205.47446%2010.949C4.20905%2011.8953%202.61476%2012.4613%200.881783%2012.4613C0.587106%2012.461%200.292693%2012.4445%200%2012.4118C1.63638%2013.4142%203.5806%2014%205.6688%2014C12.4708%2014%2016.1897%208.6141%2016.1897%203.94348C16.1897%203.79071%2016.1897%203.63794%2016.1782%203.48627C16.9018%202.98587%2017.5268%202.36664%2018.0239%201.65741H18.025Z'%20fill='white'/%3e%3c/svg%3e"
                   /></a>
                 </div>
-                <p class="opinion__text-card">
+                <p data-lang="opinion-view-aaron" class="opinion__text-card">
                   “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is
                   Ridiculous.”
                 </p>
-                <p class="opinion__date">December 24, 2018</p>
+                <p data-lang="opinion-date-aaron" class="opinion__date">
+                  December 24, 2018
+                </p>
               </li>
             </ul>
           </div>
@@ -323,9 +464,13 @@
         <div class="container">
           <div class="subscribe__content">
             <div class="subscribe__head">
-              <h3 class="subscribe__title">Want to stay in touch?</h3>
-              <h2 class="subscribe__subtitle">newsletter SUBSCRIBE</h2>
-              <p class="subscribe__text">
+              <h3 data-lang="subscribe-title" class="subscribe__title">
+                Want to stay in touch?
+              </h3>
+              <h2 data-lang="subscribe-subtitle" class="subscribe__subtitle">
+                newsletter SUBSCRIBE
+              </h2>
+              <p data-lang="subscribe-text" class="subscribe__text">
                 In order to start receiving our news, all you have to do is
                 enter your email address. Everything else will be taken care of
                 by us. We will send you emails containing information about
@@ -334,7 +479,11 @@
             </div>
             <form class="subscribe__form">
               <label class="subscribe__label" for="email">
-                <span class="subscribe__label-text">Your email address</span>
+                <span
+                  data-lang="subscribe-label-text"
+                  class="subscribe__label-text"
+                  >Your email address</span
+                >
                 <input
                   placeholder="your@gmail.com"
                   class="subscribe__input"
@@ -342,7 +491,11 @@
                   type="email"
                 />
               </label>
-              <button class="subscribe__form-btn button" type="submit">
+              <button
+                data-lang="subscribe-form-btn"
+                class="subscribe__form-btn button"
+                type="submit"
+              >
                 Subscribe now
               </button>
             </form>
@@ -354,26 +507,38 @@
       <div class="container">
         <div class="footer__top">
           <a class="footer__logo" href="#"
-            ><img src="/sos/assets/logo-NE8A7csD.svg" alt="SOS"
+            ><img src="/sos/assets/logo-g8-nkh2Z.svg" alt="SOS"
           /></a>
           <nav class="footer__nav">
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" href="#">main</a>
+                <a data-lang="nav-main" class="footer__link" href="#">main</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#about">about</a>
+                <a data-lang="nav-about" class="footer__link" href="#about"
+                  >about</a
+                >
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#features">game features</a>
+                <a
+                  data-lang="nav-features"
+                  class="footer__link"
+                  href="#features"
+                  >game features</a
+                >
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#requirements"
+                <a
+                  data-lang="nav-requirements"
+                  class="footer__link"
+                  href="#requirements"
                   >system requirements</a
                 >
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#opinion">quotes</a>
+                <a data-lang="nav-quotes" class="footer__link" href="#opinion"
+                  >quotes</a
+                >
               </li>
             </ul>
           </nav>
@@ -401,18 +566,33 @@
           </ul>
         </div>
         <div class="footer__bottom">
-          <p class="footer__rights">
+          <p data-lang="footer-rights" class="footer__rights">
             © 2018 Outpost Games, Inc. All Rights Reserved
           </p>
           <ul class="footer__legal-list">
             <li class="footer__legal-item">
-              <a class="footer__legal-link" href="#">Privacy Policy</a>
+              <a
+                data-lang="footer-legal-policy"
+                class="footer__legal-link"
+                href="#"
+                >Privacy Policy</a
+              >
             </li>
             <li class="footer__legal-item">
-              <a class="footer__legal-link" href="#">Terms of Services</a>
+              <a
+                data-lang="footer-legal-services"
+                class="footer__legal-link"
+                href="#"
+                >Terms of Services</a
+              >
             </li>
             <li class="footer__legal-item">
-              <a class="footer__legal-link" href="#">Code of Conduct</a>
+              <a
+                data-lang="footer-legal-conduct"
+                class="footer__legal-link"
+                href="#"
+                >Code of Conduct</a
+              >
             </li>
           </ul>
         </div>
