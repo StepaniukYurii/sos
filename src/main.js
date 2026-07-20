@@ -214,3 +214,11 @@ for (const langOption of langOptions) {
     changeLanguage(lang);
   });
 }
+
+const gallery = document.querySelector(".about__gallery");
+const gallerySwitchButton = document.querySelector(".about__gallery-btn");
+
+gallerySwitchButton.addEventListener("click", () => {
+  const galleryItems = document.querySelectorAll(".about__gallery-item");
+  gallery.append(galleryItems[0]);
+});
